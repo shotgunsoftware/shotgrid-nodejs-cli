@@ -9,7 +9,7 @@
     "shotgun-nodejs": "^4.0.1n",
     "yargs": "^16.0.3"
   },
-  "name": "shotgun-nodejs-cli",
+  "name": "shotgrid-nodejs-cli",
   "version": "1.0.0",
   "description": "Autodesk Shotgrid REST API CLI",
   "main": "bin/index.js",
