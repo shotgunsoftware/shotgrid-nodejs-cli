@@ -2,7 +2,7 @@ const chalk = require('chalk');
 const requireAll = require('require-all');
 const util = require('util');
 
-const { ShotgunClient, PaginatedRecordResponse } = require('shotgun-nodejs');
+const { default: ShotgunClient, PaginatedRecordResponse } = require('shotgun-nodejs');
 
 function defineCommands(yargs) {
 
