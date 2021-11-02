@@ -24,10 +24,10 @@ shotgrid-nodejs-cli
 npm install -g shotgrid-nodejs-cli
 
 # Command invocation
-shotgrid-nodejs-cli --site https://mysite.shotgunstudio.com --username username --password password entity-read HumanUser 3
+shotgrid-nodejs-cli --site https://mysite.shotgrid.autodesk.com --username username --password password entity-read HumanUser 3
 
 # Credentials setup algternative
-export SHOTGUN_SITE=https://mysite.shotgunstudio.com
+export SHOTGUN_SITE=https://mysite.shotgrid.autodesk.com
 export SHOTGUN_USERNAME=username
 export SHOTGUN_PASSWORD=password
 
