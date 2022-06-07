@@ -4,6 +4,7 @@ const inquirerCheckboxPlusPrompt = require('inquirer-checkbox-plus-prompt');
 const requireAll = require('require-all');
 const url = require('url');
 const util = require('util');
+const { generateTable } = require('../helper');
 
 const { default: ShotgunClient, PaginatedRecordResponse, RequestError } = require('shotgun-nodejs');
 
@@ -172,7 +173,7 @@ async function run(argv) {
 				// eslint-disable-next-line no-constant-condition
 				while (true) {
 
-					console.log(`${out.getTable()}`);
+					console.log(`${generateTable(out)}`);
 
 					if (out.reachedEnd())
 						break;

@@ -1,6 +1,7 @@
 const chalk = require('chalk');
 const requireAll = require('require-all');
 const util = require('util');
+const { generateTable } = require('../helper');
 
 const { default: ShotgunClient, PaginatedRecordResponse } = require('shotgun-nodejs');
 
@@ -45,7 +46,7 @@ function getClient({ site, username, password, debug }) {
 async function printOutput(out, forceJsonOutput) {
 
 	if (!forceJsonOutput && out instanceof PaginatedRecordResponse) {
-		console.log(`${out.getTable()}`);
+		console.log(`${generateTable(out)}`);
 	} else {
 		console.log(util.inspect(JSON.parse(JSON.stringify(out)), false, Infinity, true));
 	}
